@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaLearn.iml" filepath="$PROJECT_DIR$/JavaLearn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gaopeng/gaopeng.iml" filepath="$PROJECT_DIR$/gaopeng/gaopeng.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hsp_jva/hsp_jva.iml" filepath="$PROJECT_DIR$/hsp_jva/hsp_jva.iml" />
+    </modules>
+  </component>
+</project>
