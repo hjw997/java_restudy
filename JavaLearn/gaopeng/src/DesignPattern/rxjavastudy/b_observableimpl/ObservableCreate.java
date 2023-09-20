@@ -1,10 +1,10 @@
-package DesignPattern.rxjavastudy.observableimpl;
+package DesignPattern.rxjavastudy.b_observableimpl;
 
 
-import DesignPattern.rxjavastudy.core.Emitter;
-import DesignPattern.rxjavastudy.core.Observable;
-import DesignPattern.rxjavastudy.core.ObservableOnSubscribe;
-import DesignPattern.rxjavastudy.core.Observer;
+import DesignPattern.rxjavastudy.a_core.Emitter;
+import DesignPattern.rxjavastudy.a_core.Observable;
+import DesignPattern.rxjavastudy.a_core.ObservableOnSubscribe;
+import DesignPattern.rxjavastudy.a_core.Observer;
 
 /**
  * 被观察者 的具体实现. 命名方式: ObservableXXXX 如 ObservableMap,ObservableCreate

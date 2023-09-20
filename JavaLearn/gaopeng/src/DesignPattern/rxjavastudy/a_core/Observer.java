@@ -1,4 +1,4 @@
-package DesignPattern.rxjavastudy.core;
+package DesignPattern.rxjavastudy.a_core;
 
 /**
  * 观察者的顶层接口

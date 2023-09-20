@@ -1,9 +1,9 @@
 package DesignPattern.rxjavastudy;
 
-import DesignPattern.rxjavastudy.core.Emitter;
-import DesignPattern.rxjavastudy.core.Observable;
-import DesignPattern.rxjavastudy.core.ObservableOnSubscribe;
-import DesignPattern.rxjavastudy.core.Observer;
+import DesignPattern.rxjavastudy.a_core.Emitter;
+import DesignPattern.rxjavastudy.a_core.Observable;
+import DesignPattern.rxjavastudy.a_core.ObservableOnSubscribe;
+import DesignPattern.rxjavastudy.a_core.Observer;
 
 public class AppTest {
     public static void main(String[] args) {

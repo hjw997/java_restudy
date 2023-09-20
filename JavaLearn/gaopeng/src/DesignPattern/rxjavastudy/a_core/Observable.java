@@ -1,6 +1,6 @@
-package DesignPattern.rxjavastudy.core;
+package DesignPattern.rxjavastudy.a_core;
 
-import DesignPattern.rxjavastudy.observableimpl.ObservableCreate;
+import DesignPattern.rxjavastudy.b_observableimpl.ObservableCreate;
 
 /***
  * 被观察者的核心抽象类

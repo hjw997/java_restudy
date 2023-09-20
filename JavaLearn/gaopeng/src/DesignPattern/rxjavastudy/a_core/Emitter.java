@@ -1,4 +1,4 @@
-package DesignPattern.rxjavastudy.core;
+package DesignPattern.rxjavastudy.a_core;
 
 /**
  * 事件发射器
