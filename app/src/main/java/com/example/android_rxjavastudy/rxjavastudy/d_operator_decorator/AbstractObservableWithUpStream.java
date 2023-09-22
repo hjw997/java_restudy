@@ -1,7 +1,7 @@
-package DesignPattern.rxjavastudy.d_operator_decorator;
+package com.example.android_rxjavastudy.rxjavastudy.d_operator_decorator;
 
-import DesignPattern.rxjavastudy.a_core.Observable;
-import DesignPattern.rxjavastudy.a_core.ObservableSource;
+import com.example.android_rxjavastudy.rxjavastudy.a_core.Observable;
+import com.example.android_rxjavastudy.rxjavastudy.a_core.ObservableSource;
 
 /**
  * 装饰类的顶层类：也就是调料类，调料类也是一种饮料
@@ -15,7 +15,7 @@ public abstract class AbstractObservableWithUpStream<T,U> extends Observable<U> 
     /// 什么是 source ？ the place something comes from or starts at, or the cause of something
    protected final  ObservableSource<T> source; ///protected 让所有子类能访问。
 
-    AbstractObservableWithUpStream(ObservableSource<T> source) {
+    protected AbstractObservableWithUpStream(ObservableSource<T> source) {
         this.source = source;
     }
 }
