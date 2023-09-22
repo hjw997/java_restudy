@@ -20,6 +20,7 @@ public class ObservableMap<T,U> extends AbstractObservableWithUpStream<T,U>{
     @Override
     protected void subscribeActual(Observer<U> observer) {
         //source.subscribe(observer);
+        /// 要创建一个新的 Observer ，持有下游的 observer ，然后处理事情后再交给下游。
         MapObserver mapObserver = new MapObserver(observer,function);
         source.subscribe(mapObserver);
     }
@@ -30,11 +31,11 @@ public class ObservableMap<T,U> extends AbstractObservableWithUpStream<T,U>{
         private final Observer<U> downStream;
 
         /// 持有一个 要操作的 对象
-        private final Function<T,U> function;
+        private final Function<T,U> mapper;
 
         MapObserver(Observer<U> downStream, Function<T, U> function) {
             this.downStream = downStream;
-            this.function = function;
+            this.mapper = function;
         }
 
 
@@ -45,8 +46,9 @@ public class ObservableMap<T,U> extends AbstractObservableWithUpStream<T,U>{
 
         @Override
         public void onNext(T t) {
-            /// Map的核心就是这里 执行完转换后 再传给 下游的 观察者
-            U u = function.apply(t);
+            /// Map的核心 就是这里 做一次转换操作。
+            U u = mapper.apply(t);
+            // 执行完转换后 再传给 下游的 观察者
             downStream.onNext(u);
         }
 
