@@ -1,6 +1,8 @@
 package DesignPattern.rxjavastudy.a_core;
 
 import DesignPattern.rxjavastudy.b_observableimpl.ObservableCreate;
+import DesignPattern.rxjavastudy.d_operator_decorator.Function;
+import DesignPattern.rxjavastudy.d_operator_decorator.ObservableMap;
 
 /***
  * 被观察者的核心抽象类
@@ -24,5 +26,18 @@ abstract  public class Observable<T> implements ObservableSource<T> {
     public static <T> Observable<T> create(ObservableOnSubscribe<T> source) {
         return new ObservableCreate<>(source);
     }
+
+    /// 创建一个 map 操作符 map 操作符是个对象的实例方法 不在需要是静态方法了
+
+    /**
+     * map操作符
+     * @param function 要做的具体操作的实例对象，开发中可用lambda 表达式等。
+     * @return 包装了原来的被观察者的 新的被观察者
+     * @param <U> map 操作符以后 返回的类
+     */
+    public <U> ObservableMap<T, U> map(Function<T,U> function) {
+       return new ObservableMap(this, function);
+    }
+
 
 }
