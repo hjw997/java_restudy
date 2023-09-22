@@ -8,11 +8,11 @@ import DesignPattern.rxjavastudy.d_operator_decorator.AbstractObservableWithUpSt
  * @param <T>
  * @param <T>
  */
-public class ObservableSubscribeOn<T,T>  extends AbstractObservableWithUpStream<T,T> {
-
-
-    @Override
-    protected void subscribeActual(Observer<T> observer) {
-
-    }
-}
+//public class ObservableSubscribeOn<T,T>  extends AbstractObservableWithUpStream<T,T> {
+//
+//
+//    @Override
+//    protected void subscribeActual(Observer<T> observer) {
+//
+//    }
+//}
