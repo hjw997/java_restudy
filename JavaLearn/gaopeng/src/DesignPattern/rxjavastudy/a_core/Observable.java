@@ -3,6 +3,7 @@ package DesignPattern.rxjavastudy.a_core;
 import DesignPattern.rxjavastudy.b_observableimpl.ObservableCreate;
 import DesignPattern.rxjavastudy.d_operator_decorator.Function;
 import DesignPattern.rxjavastudy.d_operator_decorator.ObservableMap;
+import DesignPattern.rxjavastudy.d_operator_decorator.ObserverFlatMap;
 
 /***
  * 被观察者的核心抽象类
@@ -24,6 +25,7 @@ abstract  public class Observable<T> implements ObservableSource<T> {
     /// 参数为一个 ObservableOnSubscribe 接口的实例。
     /// ObservableOnSubscribe 是调用的时候动态的实现的。
     public static <T> Observable<T> create(ObservableOnSubscribe<T> source) {
+        /// 这里的source 是指的是事件的源头。和那个 调料抽象类（AbstractObservableWithUpStream）中的有source 不是一个。
         return new ObservableCreate<>(source);
     }
 
@@ -37,6 +39,17 @@ abstract  public class Observable<T> implements ObservableSource<T> {
      */
     public <U> ObservableMap<T, U> map(Function<T,U> function) {
        return new ObservableMap(this, function);
+    }
+
+    /**
+     * flatMap 操作符
+     * @param function
+     * @return
+     * @param <U>
+     */
+    public <U> ObserverFlatMap<T, U> flatMap(Function<T,Observable<U>> function) {
+
+        return new ObserverFlatMap(this, function);
     }
 
 
