@@ -28,7 +28,7 @@ public class ObservableSubscribeOn<T>  extends AbstractObservableWithUpStream<T,
     }
 
    static class SubscribeOnObserver<T>  implements Observer<T> {
-        final  Observer<T>  downSteam;
+        private  final  Observer<T>  downSteam;
 
        SubscribeOnObserver(Observer<T> downSteam) {
            this.downSteam = downSteam;
