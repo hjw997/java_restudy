@@ -5,6 +5,8 @@ import com.example.android_rxjavastudy.rxjavastudy.a_core.Observable;
 import com.example.android_rxjavastudy.rxjavastudy.a_core.ObservableOnSubscribe;
 import com.example.android_rxjavastudy.rxjavastudy.a_core.Observer;
 import com.example.android_rxjavastudy.rxjavastudy.d_operator_decorator.Function;
+import com.example.android_rxjavastudy.rxjavastudy.e_changeThread.scheduler.Schedulers;
+
 import org.junit.Test;
 
 public class AppTest {
@@ -131,6 +133,49 @@ public class AppTest {
         });
     }
 
+
+    @Test
+    public void rxjavaSubscribeOnCore04() { ///@Test 两点注意：1.不能是静态方法。2.类得是 public 的
+        System.out.println("Rxjava---SubscribeOn");
+        /// create 参数就是我们动态的实现的一个接口ObservableOnSubscribe 的 实例。
+        Observable.create(new ObservableOnSubscribe<String>() {
+                    @Override
+                    public void subscribe(Emitter<String> emitter) {
+                        emitter.onNext("abc1");
+                        emitter.onNext("abc2");
+                        emitter.onNext("abc3");
+                        emitter.onNext("abc4");
+                    }
+                }).map(new Function<String, String>() {
+                    @Override
+                    public String apply(String s) {
+                        System.out.println(Thread.currentThread().getName() + "---map");
+                        return s + "+mapped";
+                    }
+                })
+                .subscribeOn(Schedulers.newThread())
+                .subscribe(new Observer<String>() {
+                    @Override
+                    public void onSubscribe() {
+                        System.out.println("onSubscribe---在订阅");
+                    }
+
+                    @Override
+                    public void onNext(String o) {
+                        System.out.println("onNext---:" + o);
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        System.out.println("onComplete---");
+                    }
+
+                    @Override
+                    public void onError(Throwable throwable) {
+                        System.out.println("onError---");
+                    }
+                });
+    }
 
 
 }
