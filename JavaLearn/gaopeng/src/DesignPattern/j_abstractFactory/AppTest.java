@@ -92,7 +92,7 @@ class SanQinFactory implements Factory {
 /***
  * 比如这里是使用这些工厂和产品的业务代码..
  */
-class  Bussiness {
+class Business {
     public static void taste(Factory factory) {
         Food food1 = factory.getFood();
         Drink drink1 = factory.getDrink();
@@ -148,14 +148,14 @@ class BaoJiFactory implements Factory { //扩展一个生产产品簇的工厂.
 public class AppTest {
     public static void main(String[] args) {
 
-        Bussiness.taste(new KFCFactory());
+        Business.taste(new KFCFactory());
         System.out.println("--------------------");
-        Bussiness.taste(new SanQinFactory());
+        Business.taste(new SanQinFactory());
         System.out.println("--------------------");
 
 
         /// 此处这里 很好的把自己扩展的 东西扩展进去.
-        Bussiness.taste(new BaoJiFactory());
+        Business.taste(new BaoJiFactory());
     }
 }
 
