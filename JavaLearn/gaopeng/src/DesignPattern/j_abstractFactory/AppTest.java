@@ -118,14 +118,15 @@ class LiangPi implements Food {
     }
 }
 
-class MilKTeak implements Drink {
+class MilKTea implements Drink {
 
     @Override
     public void drink() {
         System.out.println("喝奶茶");
     }
 }
-
+/**以上 凉皮 和 奶茶 两个产品等级,但是是一个产品簇 中的东西.
+ */
 
 /**
  * 此时扩展 不用去动 时空线以上 作者的代码了 ✅
@@ -139,7 +140,7 @@ class BaoJiFactory implements Factory { //扩展一个生产产品簇的工厂.
 
     @Override
     public Drink getDrink() {
-        return new MilKTeak();
+        return new MilKTea();
     }
 
 }
