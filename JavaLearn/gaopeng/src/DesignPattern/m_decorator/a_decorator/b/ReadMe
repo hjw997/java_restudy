@@ -1,0 +1,22 @@
+1.为了满足 a 包中的 需求,加入调料,尝试这样解决问题:
+为加牛奶的Decaf 咖啡创建一个类:
+class DecafWithMilk {
+
+}
+
+为加牛奶的Espresso 咖啡创建一个类:
+class EspressoWithMilk {
+
+}
+
+为加牛奶+豆浆的咖啡 Decaf创建一个类
+class DecafWithMilkAndSoy {
+
+}
+
+//依次类推: 4种调料 +  咖啡的 各种组合
+
+这种写法会产生类爆炸.💥 参考类爆炸图.
+如果后期 再加一个新的调料:枸杞 组合搭配更多.
+所以不能这样设计类.  看 c 包.
+
