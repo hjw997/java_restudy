@@ -106,22 +106,24 @@ public class AppTest {
              div() {
                 handler.invoke();
              }
-
          }
 
          */
 
-        //参数1:
-        ClassLoader classLoader = AppTest.class.getClassLoader();
-        //参数2
-        Class[] interfaces = {ICalc.class};
-
-        //参数3 决定方法体.
-
         //这种new的叫做真实对象,也叫目标对象.
         ICalc calc = new CalcImpl();
 
-        //生成代理对象:
+        //参数1:
+        ClassLoader classLoader = AppTest.class.getClassLoader();
+
+        //参数2:要生成字节码的依据.
+        Class[] interfaces = {ICalc.class};
+        // 其实也是:目标对象实现的接口 :可以调用API  目标对象.getClass().getInterfaces()
+        Class<?>[] interfaces1 = calc.getClass().getInterfaces();
+
+        // 参数3 决定生成的代理对象的方法体.伪代码如下 class 我是动态生成的那个类 ...
+
+        //生成代理对象: 为什么能转成 ICalc 接口对象? 因为我们代理是根据 第二个参数目标对象实现的接口 来生成代理对象.
         ICalc  proxy = (ICalc) Proxy.newProxyInstance(classLoader, interfaces, new MyHandler(calc));
         //对代理对象的方法调用,都会统统进入到调用处理器中的invoke方法中.而不会直接进入真实的方法
         proxy.add(1, 2);
@@ -181,4 +183,8 @@ class MyHandler implements InvocationHandler {
  * 优点:
  * 克服了上个包中缺点.
  * 需求变更 只需要该一个地方,比如英文写日志. 135中文 246 英文 配合策略模式 很好改动.
+ *
+ * 缺点:
+ * 使用复杂! 我们最好把这个代码封装下,对使用者更友好.看 e 包封装
+ *
  */
