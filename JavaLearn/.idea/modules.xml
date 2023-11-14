@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaLearn.iml" filepath="$PROJECT_DIR$/JavaLearn.iml" />
       <module fileurl="file://$PROJECT_DIR$/MySQLStudy/MySQLStudy.iml" filepath="$PROJECT_DIR$/MySQLStudy/MySQLStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design_pattern_learn/design_pattern_learn.iml" filepath="$PROJECT_DIR$/design_pattern_learn/design_pattern_learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/gaopeng/gaopeng.iml" filepath="$PROJECT_DIR$/gaopeng/gaopeng.iml" />
       <module fileurl="file://$PROJECT_DIR$/hsp_jva/hsp_jva.iml" filepath="$PROJECT_DIR$/hsp_jva/hsp_jva.iml" />
       <module fileurl="file://$PROJECT_DIR$/mj_java/mj_java.iml" filepath="$PROJECT_DIR$/mj_java/mj_java.iml" />
