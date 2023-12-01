@@ -1,6 +1,6 @@
 package mj_java_01.a04_继承.f_访问控制_Access_control;
 
-import a01_java基础语法.a04_访问控制_Access_control.models.Person;
+import mj_java_01.a04_继承.f_访问控制_Access_control.models.Person;
 
 /**
  * java包的权限:
