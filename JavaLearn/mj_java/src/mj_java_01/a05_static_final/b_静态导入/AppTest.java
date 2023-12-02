@@ -1,10 +1,10 @@
-package mj_java_01.a05_static.b_静态导入;
+package mj_java_01.a05_static_final.b_静态导入;
 
-import static mj_java_01.a05_static.b_静态导入.Person.name; /** 只导入某一个静态属性 */
-import static mj_java_01.a05_static.b_静态导入.Person.run;  /** 导入一个静态的方法. */
-import static mj_java_01.a05_static.b_静态导入.Person.Hand; /** 导入一个静态类*/
+import static mj_java_01.a05_static_final.b_静态导入.Person.name; /** 只导入某一个静态属性 */
+import static mj_java_01.a05_static_final.b_静态导入.Person.run;  /** 导入一个静态的方法. */
+import static mj_java_01.a05_static_final.b_静态导入.Person.Hand; /** 导入一个静态类*/
 
-import static mj_java_01.a05_static.b_静态导入.Student.*; /** *表示 导入Student下的 所有的静态成员*/
+import static mj_java_01.a05_static_final.b_静态导入.Student.*; /** *表示 导入Student下的 所有的静态成员*/
 
 import static java.lang.Math.PI; /** 建议用谁导谁 全部导入会降低可读性.分不清访问的是哪个类中的. */
 

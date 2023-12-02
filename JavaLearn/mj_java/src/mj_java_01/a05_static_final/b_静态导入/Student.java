@@ -1,4 +1,4 @@
-package mj_java_01.a05_static.b_静态导入;
+package mj_java_01.a05_static_final.b_静态导入;
 
 public class Student {
     public static int count;

@@ -1,4 +1,4 @@
-package mj_java_01.a05_static.a_static;
+package mj_java_01.a05_static_final.a_static;
 
 class Person {
     /**
