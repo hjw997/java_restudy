@@ -1,4 +1,4 @@
-package mj_java_01.a07_抽象类和接口.b_接口.b_接口可定义内容;
+package mj_java_01.a07_抽象类_接口_多态.b_接口.b_接口可定义内容;
 
 public class AppTest {
     public static void main(String[] args) {

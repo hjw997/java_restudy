@@ -1,4 +1,4 @@
-package mj_java_01.a07_抽象类和接口.a_抽象类.b_抽象类案例;
+package mj_java_01.a07_抽象类_接口_多态.a_抽象类.b_抽象类案例;
 
 public class Rectangle extends Shape {
     public double getWidth() {

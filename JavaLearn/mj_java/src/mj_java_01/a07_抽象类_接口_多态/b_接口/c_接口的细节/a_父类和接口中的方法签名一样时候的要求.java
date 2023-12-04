@@ -1,4 +1,4 @@
-package mj_java_01.a07_抽象类和接口.b_接口.c_接口的细节;
+package mj_java_01.a07_抽象类_接口_多态.b_接口.c_接口的细节;
 
 
 public class a_父类和接口中的方法签名一样时候的要求 {
