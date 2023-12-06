@@ -1,8 +1,5 @@
-package mj_java_01.a08_匿名类.c_数组排序.b_msb_策略模式;
+package mj_java_01.a08_匿名类_lambda表达式.c_数组排序.b_msb_策略模式;
 
-import mj_java_01.a08_匿名类.c_数组排序.a_msb_策略模式补充.Cat;
-
-import java.util.Arrays;
 import java.util.Comparator;
 
 

@@ -1,6 +1,6 @@
-package mj_java_01.a08_匿名类.c_数组排序.b_msb_策略模式;
+package mj_java_01.a08_匿名类_lambda表达式.c_数组排序.a_msb_策略模式补充;
 
-public class Cat implements Comparable<Cat>{
+public class Cat {
     int weight,height;
 
     public Cat(int weight, int height) {
@@ -8,8 +8,7 @@ public class Cat implements Comparable<Cat>{
         this.height = height;
     }
 
-    //定义猫的比较方法 : 这种方式比较 死板 使用比较器,不同的比较器(不同的策略,就能实现不同的比较方式)
-    @Override
+    //定义猫的比较方法
     public int compareTo(Cat cat) { //cat 是被比较的
         if (this.weight < cat.weight) return -1; // 比较的对象this, 比较小.
         else  if (this.weight > cat.weight) return 1; //比较的this 比较大.

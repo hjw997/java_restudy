@@ -1,8 +1,8 @@
-package mj_java_01.a08_匿名类.b_匿名类用途;
+package mj_java_01.a08_匿名类_lambda表达式.b_匿名类用途;
 
-import mj_java_01.a08_匿名类.b_匿名类用途.util.Files;
-import mj_java_01.a08_匿名类.b_匿名类用途.util.NetWorks;
-import mj_java_01.a08_匿名类.b_匿名类用途.util.Times;
+import mj_java_01.a08_匿名类_lambda表达式.b_匿名类用途.util.Files;
+import mj_java_01.a08_匿名类_lambda表达式.b_匿名类用途.util.NetWorks;
+import mj_java_01.a08_匿名类_lambda表达式.b_匿名类用途.util.Times;
 
 import java.util.ArrayList;
 import java.util.Arrays;

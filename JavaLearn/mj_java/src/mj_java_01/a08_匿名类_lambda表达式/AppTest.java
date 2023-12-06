@@ -1,6 +1,6 @@
-package mj_java_01.a08_匿名类;
+package mj_java_01.a08_匿名类_lambda表达式;
 
-import mj_java_01.a08_匿名类.b_匿名类用途.util.Times;
+import mj_java_01.a08_匿名类_lambda表达式.b_匿名类用途.util.Times;
 
 public class AppTest {
     public static void main(String[] args) {

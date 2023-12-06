@@ -1,4 +1,4 @@
-package mj_java_01.a08_匿名类.b_匿名类用途.util;
+package mj_java_01.a08_匿名类_lambda表达式.b_匿名类用途.util;
 
 /**
  * 网络请求工具类

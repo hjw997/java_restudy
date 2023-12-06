@@ -1,4 +1,4 @@
-package mj_java_01.a08_匿名类.c_数组排序.b_msb_策略模式;
+package mj_java_01.a08_匿名类_lambda表达式.c_数组排序.b_msb_策略模式;
 
 /**
  * 比起 Cat 更通用的写法 :

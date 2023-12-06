@@ -1,4 +1,4 @@
-package mj_java_01.a08_匿名类.b_匿名类用途.util;
+package mj_java_01.a08_匿名类_lambda表达式.b_匿名类用途.util;
 
 /**
  * JDK 中的工具类一般 使用 s结尾  比如Times Utils 等. 建议模仿
