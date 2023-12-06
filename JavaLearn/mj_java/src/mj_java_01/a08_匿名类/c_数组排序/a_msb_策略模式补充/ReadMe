@@ -1,0 +1,12 @@
+这一部分补充了 一些排序的知识
+选择排序 : 指定最小的刚开始是0 , 然后遍历一遍,找到真正最小的,然后
+那个 排序 的 -1 0 1 三个推导.
+进而引jdk 中的 Comparable 接口
+Comparable接口的泛型话.
+马士兵:设计模式的策略设计模式 公众号说有算法的可以搜搜
+https://www.bilibili.com/video/BV1G44y1R7nv?p=3&spm_id_from=pageDriver&vd_source=b386945edbef32fc1df7d8a419f8de78
+
+MJ排序算法:
+https://www.bilibili.com/video/BV1PT4y13767?p=7&spm_id_from=pageDriver&vd_source=b386945edbef32fc1df7d8a419f8de78
+
+Compartor 才是策略模式:

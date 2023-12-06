@@ -1,0 +1,5 @@
+package mj_java_01.a08_匿名类.c_数组排序.b_msb_策略模式;
+
+public interface Comparable<T> {
+    public int compareTo(T o);
+}
