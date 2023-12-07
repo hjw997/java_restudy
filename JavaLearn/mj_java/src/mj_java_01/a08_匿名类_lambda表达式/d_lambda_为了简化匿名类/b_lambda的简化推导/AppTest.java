@@ -1,4 +1,4 @@
-package mj_java_01.a08_匿名类_lambda表达式.d_lambda.b_lambda的简化推导;
+package mj_java_01.a08_匿名类_lambda表达式.d_lambda_为了简化匿名类.b_lambda的简化推导;
 
 import mj_java_01.a08_匿名类_lambda表达式.b_匿名类用途.util.Files;
 import mj_java_01.a08_匿名类_lambda表达式.b_匿名类用途.util.Times;
