@@ -1,5 +1,6 @@
 package mj_java_01.a17_IO.d_io流.c_字符流.a_字符流;
 
+import mj_java_01.a17_IO.d_io流.PathConstant;
 import org.junit.Test;
 
 import java.io.*;
@@ -16,7 +17,7 @@ import java.nio.charset.Charset;
  *
  */
 public class AppTest {
-    private static final String ioTestPath = "/Users/whj/Desktop/io_test/";
+    private static final String ioTestPath = PathConstant.ioTestRootPath;
 
     private File  file = new File(ioTestPath + "mj2.text");
     public static void main(String[] args) {
