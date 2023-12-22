@@ -8,9 +8,9 @@ public class AppTest {
         /**
          * 如何从控制台 读取用户输入??
          * 读取控制台的输入,相当于 就是读取键盘的输入
-         * 像这种 控制台输入,键盘输入 在编程中 叫做 标准输入(std cout 等)
+         * 像这种 控制台输入,键盘输入 在编程中 叫做 标准输入( 如C++ 的 std cout 等)
          * 标准输入(standard input Stream)流 : 控制台的输入,键盘的输入.
-         * 标准输出(standart output Stream)流 : 控制台的输出, 屏幕的输出
+         * 标准输出(standard output Stream)流 : 控制台的输出, 屏幕的输出
          */
 
         /**
