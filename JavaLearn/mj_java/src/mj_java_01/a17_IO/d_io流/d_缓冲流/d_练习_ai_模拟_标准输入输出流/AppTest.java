@@ -1,4 +1,4 @@
-package mj_java_01.a17_IO.d_io流.d_缓冲流.d_练习_ai_模拟;
+package mj_java_01.a17_IO.d_io流.d_缓冲流.d_练习_ai_模拟_标准输入输出流;
 
 import java.io.*;
 
