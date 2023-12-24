@@ -1,4 +1,4 @@
-package mj_java_01.a16_集合.b_ArrayList.c_ArrayList扩容原理;
+package mj_java_01.a16_00_集合.b_ArrayList.c_ArrayList扩容原理;
 
 import java.util.ArrayList;
 

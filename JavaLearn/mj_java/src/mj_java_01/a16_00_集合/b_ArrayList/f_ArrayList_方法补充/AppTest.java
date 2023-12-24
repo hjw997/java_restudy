@@ -1,7 +1,6 @@
-package mj_java_01.a16_集合.b_ArrayList.f_ArrayList_方法补充;
+package mj_java_01.a16_00_集合.b_ArrayList.f_ArrayList_方法补充;
 
 import org.junit.Test;
-import org.w3c.dom.ls.LSInput;
 
 import java.util.ArrayList;
 

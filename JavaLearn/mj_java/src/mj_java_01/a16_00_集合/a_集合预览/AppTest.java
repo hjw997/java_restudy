@@ -1,4 +1,4 @@
-package mj_java_01.a16_集合.a_集合预览;
+package mj_java_01.a16_00_集合.a_集合预览;
 
 
 /**

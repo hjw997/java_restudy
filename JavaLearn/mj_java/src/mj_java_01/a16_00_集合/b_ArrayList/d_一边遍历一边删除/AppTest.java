@@ -1,4 +1,4 @@
-package mj_java_01.a16_集合.b_ArrayList.d_一边遍历一边删除;
+package mj_java_01.a16_00_集合.b_ArrayList.d_一边遍历一边删除;
 
 import org.junit.Test;
 

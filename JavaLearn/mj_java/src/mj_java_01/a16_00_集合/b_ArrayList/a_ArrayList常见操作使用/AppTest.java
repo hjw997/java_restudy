@@ -1,4 +1,4 @@
-package mj_java_01.a16_集合.b_ArrayList.a_ArrayList常见操作使用;
+package mj_java_01.a16_00_集合.b_ArrayList.a_ArrayList常见操作使用;
 
 import org.junit.Test;
 

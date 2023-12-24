@@ -1,4 +1,4 @@
-package mj_java_01.a16_集合.b_ArrayList.b_自定义迭代器;
+package mj_java_01.a16_00_集合.b_ArrayList.b_自定义迭代器;
 
 import java.util.Iterator;
 
